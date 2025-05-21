@@ -2,7 +2,23 @@ import React from "react";
 import { words } from "../constants";
 import Button from "../components/Button";
 import HeroExperience from "../components/HeroModels/HeroExperience";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import AnimatedCounter from "../components/AnimatedCounter";
 const Hero = () => {
+    useGSAP(() => {
+        gsap.fromTo(
+            ".hero-text h1",
+            { y: 50, opacity: 0 },
+            {
+                y: 0,
+                opacity: 1,
+                stagger: 0.2,
+                duration: 1,
+                ease: "power2.inOut",
+            }
+        );
+    });
     return (
         <section id="hero" className="relative overflow-hidden">
             <div className="absolute top-0 left-0 z-10">
@@ -17,14 +33,14 @@ const Hero = () => {
                                 Shaping
                                 <span className="slide">
                                     <span className="wrapper">
-                                        {words.map((word) => (
+                                        {words.map((word, index) => (
                                             <span
-                                                key={word.text}
-                                                className="flex items-center md:gap-3 gap-1 pd-2"
+                                                key={index}
+                                                className="flex items-center md:gap-3 gap-1 pb-2"
                                             >
                                                 <img
                                                     src={word.imgPath}
-                                                    alt={word.text}
+                                                    alt="person"
                                                     className="xl:size-12 md:size-10 size-7 md:p-2 p-1 rounded-full bg-white-50"
                                                 />
                                                 <span>{word.text}</span>
@@ -35,16 +51,16 @@ const Hero = () => {
                             </h1>
                             <h1>into Real Projects</h1>
                             <h1>that Deliver Results</h1>
-                            <p className="text-white-50 md:text-xl relative z-10 pointer-events-none">
-                                Hi, I'm Nam, a 4th year student majoring
-                                Information Technology at Thu Dau Mot University
-                            </p>
-                            <Button
-                                className="md:w-80 md:h-16 w-60 h-12"
-                                id="button"
-                                text="See my Work"
-                            />
                         </div>
+                        <p className="text-white-50 md:text-xl relative z-10 pointer-events-none">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Quisquam, quos.
+                        </p>
+                        <Button
+                            className="md:w-80 md:h-16 w-60 h-12"
+                            id="counter"
+                            text="See my Work"
+                        />
                     </div>
                 </header>
                 {/*RIGHT: 3D MODEL */}
@@ -54,6 +70,7 @@ const Hero = () => {
                     </div>
                 </figure>
             </div>
+            <AnimatedCounter />
         </section>
     );
 };
