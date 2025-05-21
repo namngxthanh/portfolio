@@ -40,7 +40,7 @@
 <li class="my-0">🔄 <strong>Dynamic Components:</strong> Utilize reusable components for easy maintenance and modularity.</li>
 <li class="my-0">✨ <strong>Animations with GSAP:</strong> Incorporate smooth transitions to captivate users and improve interaction.</li>
 <li class="my-0">✅ <strong>Code Quality Assurance:</strong> Enforce best practices with ESLint, ensuring a robust codebase.</li>
-<li class="my-0">📬 <strong>Integrated Contact Form:</strong> Facilitate user inquiries and enhance communication effortlessly.</li>
+<li class="my-0">📬 <strong>Integrated Contact Form Real Time:</strong> Facilitate user inquiries and enhance communication effortlessly.</li>
 </ul>
 <hr>
 <h2>Getting Started</h2>
@@ -55,7 +55,7 @@
 <ol>
 <li class="my-0">
 <p><strong>Clone the repository:</strong></p>
-<pre><code class="language-sh">❯ git clone https://github.com/heatmapxanh/portfolio
+<pre><code class="language-sh">❯ git clone https://github.com/namngxthanh/portfolio
 </code></pre>
 </li>
 <li class="my-0">
