@@ -409,6 +409,11 @@ section {
     overflow: hidden;
     animation: marquee 60s linear infinite;
 }
+
+.marquee-box.pause-animation {
+    animation-play-state: paused;
+}
+
 .marquee-item {
     float: left;
 }
