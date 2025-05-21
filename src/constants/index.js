@@ -241,18 +241,22 @@ const testimonials = [
 const socialImgs = [
     {
         name: "insta",
+        url: "https://www.instagram.com/namngxthanh",
         imgPath: "/images/insta.png",
     },
     {
         name: "fb",
+        url: "https://www.fb.com",
         imgPath: "/images/fb.png",
     },
     {
         name: "x",
+        url: "https://x.com/namngthanh",
         imgPath: "/images/x.png",
     },
     {
         name: "linkedin",
+        url: "https://linkedin.com/in/namngxthanh",
         imgPath: "/images/linkedin.png",
     },
 ];
